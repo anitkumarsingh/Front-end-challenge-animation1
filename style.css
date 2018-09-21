@@ -1,0 +1,81 @@
+body{
+    background-color: black;
+    color: white;
+}
+div{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+}
+
+.animated1{
+    padding-top:95px;
+    margin-bottom: 60px;
+    animation-duration: 10s;
+    animation-name: fadeOut;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    animation-direction: alternate-reverse;
+   
+}
+.animated2{
+    padding-top:95px;
+    margin-bottom: 60px;
+    animation-duration: 10s;
+    animation-name: fadeOut;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.065, 0.42, 0.165, 1);
+    animation-direction: alternate-reverse;
+    
+}
+.animated3{
+    padding-top:95px;
+    margin-bottom: 60px;
+    animation-duration: 10s;
+    animation-name: fadeOut;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    animation-direction: alternate-reverse;
+}
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+h1{
+    text-align: center;
+    font-size: 4em;
+}
+ul{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+li{
+    display: block;
+    list-style-type: none;
+    padding: 0 10px;
+    font-size: 8em;
+}
+li:nth-child(1)
+{
+    animation-delay: .2s;
+}
+li:nth-child(2){
+    animation-delay: .5s;
+}
+li:nth-child(3){
+    animation-delay: .7s;
+}
